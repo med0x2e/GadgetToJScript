@@ -28,10 +28,4 @@ The tool is based on the awesome research/work done by:
 - @olekmirosh https://community.microfocus.com/t5/Security-Research-Blog/New-NET-deserialization-gadget-for-compact-payload-When-size/ba-p/1763282
 - @monoxgas https://silentbreaksecurity.com/re-animating-activitysurrogateselector/
 
-### PS:
-
-  ``GadgetToJScript should be used for authorized red teaming and/or nonprofit educational purposes only. 
-Any misuse of this software will not be the responsibility of the author. 
-Use it at your own networks and/or with the network owner's permission``
-
 
