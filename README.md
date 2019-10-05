@@ -21,7 +21,8 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 - Tested with visual studio 2017 - x86 build option.
 - Tested with multiple shellcode loaders, try using either C:\windows\syswow64\cscript.exe or C:\windows\system32\cscript.exe, it depends on which Arch (x86/x64) used to for build and shellcode Arch being used.
 
-### Credits & References: Based on the awesome research/work done by
+### Credits & References:
+The tool is based on the awesome research/work done by:
 - @tyranid https://googleprojectzero.blogspot.com/2017/04/ => made serializing/deserializing unserializable classes possible)
 - @pwntester yoserial.net project https://github.com/pwntester/ysoserial.net
 - @olekmirosh https://community.microfocus.com/t5/Security-Research-Blog/New-NET-deserialization-gadget-for-compact-payload-When-size/ba-p/1763282
