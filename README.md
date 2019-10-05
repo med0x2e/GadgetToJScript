@@ -1,7 +1,7 @@
 ### Description:
 A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS based scripts.
 <br>The gadget being used triggers a call to Assembly.Load when deserialized via jscript/vbscript, this means it can be used in the same way to trigger in-memory load of your own shellcode loader at runtime.
-<br><br> Lastly, the tool was created mainly for automating WSH scripts weaponization for RT engagements (LT, Persistence), the shellcode loader which was used for PoC is removed and replaced by an example assembly implemented in the "TestAssemblyLoader.cs" class for PoC purpose only.
+<br><br> Lastly, the tool was created mainly for automating WSH scripts weaponization for RT engagements (LT, Persistence), the shellcode loader which was used for PoC is removed and replaced by an example assembly implemented in the "TestAssemblyLoader.cs" class for PoC purpose.
 
 ### TLDR:
 - Generates js, vbs, hta, vba.
@@ -24,6 +24,7 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 ### Credits & References: Based on the awesome research/work done by
 - @tyranid https://googleprojectzero.blogspot.com/2017/04/ => made serializing/deserializing unserializable classes possible)
 - @pwntester yoserial.net project https://github.com/pwntester/ysoserial.net
+- @olekmirosh https://community.microfocus.com/t5/Security-Research-Blog/New-NET-deserialization-gadget-for-compact-payload-When-size/ba-p/1763282
 - @monoxgas https://silentbreaksecurity.com/re-animating-activitysurrogateselector/
 
 ### PS:
