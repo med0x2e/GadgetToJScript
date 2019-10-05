@@ -3,11 +3,10 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 <br>The gadget being used triggers a call to Assembly.Load when deserialized via jscript/vbscript, this means it can be used in the same way to trigger in-memory load of your own shellcode loader at runtime.
 <br><br> Lastly, the tool was created mainly for automating WSH scripts weaponization for RT engagements (LT, Persistence), the shellcode loader which was used for PoC is removed and replaced by an example assembly implemented in the "TestAssemblyLoader.cs" class for PoC purpose only.
 
-
 ### TLDR:
 - Generates js, vbs, hta, vba.
 - Bypasses AMSI without having to update AmsiEnable registry key or Hijack loadlibrary (AMSI.dll), basically it is more of a signature based bypass at the moment.
-- Bypasses .NET 4.8+ newly introduced controls for blocking "Assembly.Load" (
+- Bypasses .NET 4.8+ newly introduced controls for blocking "Assembly.Load"
 
 ### Details:
 - Leverages ActivitySurrogateSelector to create a Surrogate class which act as a wrapper to deserialize a gadget built in a way to trigger a call to "Activator.CreateInstance(Assembly.Load(your_assembly_bytes).GetType())".
@@ -26,3 +25,11 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 - @tyranid https://googleprojectzero.blogspot.com/2017/04/ => made serializing/deserializing unserializable classes possible)
 - @pwntester yoserial.net project https://github.com/pwntester/ysoserial.net
 - @monoxgas https://silentbreaksecurity.com/re-animating-activitysurrogateselector/
+
+### PS:
+
+  ``GadgetToJScript should be used for authorized red teaming and/or nonprofit educational purposes only. 
+Any misuse of this software will not be the responsibility of the author. 
+Use it at your own networks and/or with the network owner's permission``
+
+
