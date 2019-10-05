@@ -19,7 +19,7 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 
 ### Testing Notes:
 - Tested with visual studio 2017 - x86 build option.
-- Tested with multiple shellcode loaders, try using either C:\windows\syswow64\cscript.exe or C:\windows\system32\cscript.exe, it depends on which Arch (x86/x64) used to for build and shellcode Arch being used.
+- Tested with multiple shellcode loaders, try using either C:\windows\syswow64\cscript.exe or C:\windows\system32\cscript.exe to run generated js/vbs scripts, it all depends on which Arch (x86/x64) used for build and shellcode generation.
 
 ### Credits & References:
 The tool is based on the awesome research/work done by:
