@@ -17,7 +17,7 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 - Serialized gadgets or Streams length is calculated at runtime and automatically populated in the generated WSH scripts.
 - Generates JS/HTA scripts relying on registration-free activation of .NET based COM components, may help in case of generating VBA or registering unregistered COM objects. (In the future may be, not a requirement unless you wanna avoid "New ActiveXObject" for AV evasion or want to use another alternative of BinaryFormatter which requires registration )
 
-## Usage:
+## Usage: 
   ``-w, --scriptType=VALUE     js, vbs, vba or hta``<br>
   ``-o, --output=VALUE         Generated payload output file, example:
                                C:\Users\userX\Desktop\output (Without extension)``<br>
@@ -28,7 +28,8 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 ## Testing Notes
 - Tested with visual studio 2017 - x86 build option.
 - Tested with multiple shellcode loaders, try using either C:\windows\syswow64\cscript.exe or C:\windows\system32\cscript.exe to run generated js/vbs scripts, it all depends on which Arch (x86/x64) used for build and shellcode generation.
-
+- Make sure Windows Defender is turned off when using GadgetToJScript.exe to generate WSH scripts, can 
+be turned on once scripts are generated.
 ## Credits & References
 The tool is based on the awesome research/work done by:
 - @tyranid https://googleprojectzero.blogspot.com/2017/04/ => made serializing/deserializing unserializable classes possible)
