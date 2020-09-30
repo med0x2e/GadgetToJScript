@@ -3,7 +3,7 @@
 <HTA:APPLICATION ID="test" WINDOWSTATE="minimize">
 <head> 
 
-    <title>LazyNetToJscript HTA</title>
+    <title>GadgetToJscript HTA</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=9">
     

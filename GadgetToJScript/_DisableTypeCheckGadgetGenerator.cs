@@ -58,7 +58,6 @@ namespace GadgetToJScript
 
             Object _textFRPM = new TextFormattingRunPropertiesMarshal(_disableTypeCheckPayload);
             BinaryFormatter _formatter = new BinaryFormatter();
-            ms = new MemoryStream();
             _formatter.Serialize(ms, _textFRPM);
             return ms;
         }
