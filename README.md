@@ -5,7 +5,7 @@ A tool for generating .NET serialized gadgets that can trigger .NET assembly loa
 <br><br>The tool was created mainly for automating WSH scripts weaponization for RT engagements (Initial Access, Lateral Movement, Persistence), the shellcode loader which was used for PoC is removed and replaced by an example assembly implemented in the TestAssembly project.
 
 
-## Detail
+## Details:
 - Bypasses AMSI without having to update AmsiEnable registry key or Hijack loadlibrary (AMSI.dll).
 - Bypasses .NET 4.8+ newly introduced controls for blocking "Assembly.Load" and ActivitySurrogateSelector Type checks.
 - Gadget supports proper deserialzation of payloads targetting .NET Framework 3.5 up to 4.8+ environments.
