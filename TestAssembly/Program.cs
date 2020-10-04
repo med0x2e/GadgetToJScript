@@ -2,7 +2,7 @@
 
 namespace TestAssembly{
     public class Program{
-        public static void Main(string[] args){
+        public Program(){
             MessageBox.Show("Test Assembly !!");
         }
     }
