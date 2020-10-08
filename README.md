@@ -22,7 +22,7 @@ You can either use the binaries located in the Release folder or use VS2017 and 
 	* Generate WSH scripts targeted to run in environments where .NET Framework 4.x is not available or less than 4.8. (3.5 is the minimal required .NET Framework version), This requires to build your C# payload or .NET Assembly with .NET framework <= 3.5.
 * Use the .NET 4.x version of G2JS to:
 	* Generate WSH scripts meant to run in environments where .NET Framework 4.x is available. (Includes 4.8+)
-	* Generate WSH scripts for environments with .NET 4.8+ using “-b” option to bypass type checking.
+	* Generate WSH scripts for environments with .NET 4.8+ using <b>“--bypass”</b> option to bypass type checking.
   
 * C# source code payload should be placed within the default public constructor of your class. (Example of running Mimikatz from jscript; https://gist.github.com/med0x2e/cc10d42b1f581507013e801da2651c74)
 * Tests were conducted on the latest windows 10 Enterprise 1909 release and Windows 7 with different .NET framework versions installed.
