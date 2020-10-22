@@ -41,6 +41,14 @@ be turned back on once scripts are generated.
 |``-r, --regfree`` | ``registration-free activation of .NET based COM components, applicable to JS/HTA scripts only.``  |
 |``-h, --help``  |  ``Show Help`` |
 
+## OPSEC Tip:
+Use the .NET 3.5 version of G2JS to generate WSH Registration-free JScript/HTA scripts which can still bypass .NET framework 4.8+ type checking without having to disable such mitigation using the first ``TextFormattingRunProperties`` stage gadget. consider this as a <u>**better/cleaner**</u> bypass to execute Reg-free JScript/HTA payloads targeting .NET 4.8+ environments as it does not require:
+ * The first stage gadge
+ * Creating a <i>``Shell``</i> object
+ * Reading the current .NET framework version from the registry
+ * Setting the <i>``COMPLUS_Version``</i> environment variable.
+ 
+-> less IOCs + targetting 3.5 < .NET < 4.x Envs.
 
 ## Credits & References
 The tool is based on the awesome research/work done by:
